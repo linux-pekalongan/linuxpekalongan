@@ -11,10 +11,7 @@ function IndexPage(){
         <title>{ siteData.name }</title>
         </Head>
             <Navbar />
-      <div className='container px-40'>
-        <Header />
-             </div>
-       <Footer />
+             <Footer />
 
          
     </>

@@ -5,7 +5,7 @@ import '../styles/prism-theme.css'
 function MyApp({ Component, pageProps }) {
   return (
     <>
-    <div className='min-h-screen p-0 m-0 text-base antialiased text-gray-700 bg-gray-100 font-ubuntu'>
+    <div className='min-h-screen p-0 m-0 text-sm antialiased text-gray-700 bg-gray-100 md:text-base font-ubuntu'>
     <Component {...pageProps} />
       </div>
     </>

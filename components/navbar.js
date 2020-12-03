@@ -1,24 +1,42 @@
 import Link from 'next/link'
 import siteData from '../site-data'
+import styles from '../styles/navbar.module.css'
+
 
 function Navbar(){
   return(
-    <div className='w-full p-5 px-40 text-base text-gray-700 bg-white shadow-md'>
-      <div className='flex justify-between'>
-        <div className='logo'>
-          LOGO
+    <>
+      <div className={styles.bg}>
+        <div className='fixed z-10 w-full p-5 mt-0 text-white bg-gray-900' >
+          <div className='container flex flex-row justify-between mx-auto lg:px-40'>
+                              <a id='menuButton' className='flex flex-row md:hidden'>
+<img src={ siteData.icon.menu }/>
+            </a>
+            <a className='text-base font-extrabold'>Pekalongan1337</a>
+ <a id='menuButton' className='flex flex-row md:hidden'>
+<img src={ siteData.icon.moon }/>
+            </a>
+            <div className='hidden font-bold md:flex md:flex-row' id='mobileMenu'>
+              <Link href='/'><a className='px-4 hover:text-green-400'>Home</a></Link>
+              <Link  href='/blog'><a  className='px-4 hover:text-green-400'>Artikel</a></Link>
+              <Link  href='/about'><a className='px-4 hover:text-green-400'>About</a></Link>
+            </div>
+            <div className='hidden md:flex md:flex-row'>
+              <a href={ siteData.community.telegram } ><img src={ siteData.icon.telegram } className='px-4'/></a>
+              <a href={ siteData.community.facebook } ><img src={ siteData.icon.facebook } className='px-4'/></a>
+            </div>
+          </div>
         </div>
-        <ul className='flex flex-row'>
-          <li className='pr-12'><Link href='/'>Home</Link></li>
-          <li className='pr-12'><Link href='/blog'>Blog</Link></li>
-          <li className=''><Link href='/about'>About</Link></li>
-        </ul>
-        <div className='flex flex-row'>
-          <Link  href={siteData.community.telegram}><a><img className='pr-5' src={siteData.icon.telegram}/></a></Link>
-           <Link href={siteData.community.facebook}><a><img src={siteData.icon.facebook}/></a></Link>
-        </div>
-        </div>
+        <header>
+          <div className='flex flex-row min-h-screen pt-12 mx-0 text-white bg-gray-900 md:w-1/2 bg-opacity-50'>
+            <div className='flex flex-col p-12 md:p-24'>
+              <div className='pb-4 text-2xl font-bold text-green-400 md:text-4xl'>{ siteData.name }</div>
+              <div className=''>{ siteData.description }</div>
+            </div>
+          </div>
+        </header>
       </div>
+    </>
   )
 }
 

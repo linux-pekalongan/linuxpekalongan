@@ -1,18 +1,17 @@
 import siteData from '../site-data'
-import telegram from '../public/assets/icon/telegram-line.svg'
-
+import styles from '../styles/header.module.css'
 
 function Header(){
   return (
     <>
-      <div style={{backgroundImage: "img('/assets/batik.png')"}}>
-      <div className='flex flex-row pt-10'>
-        <div className='p-24 mr-24'>{ siteData.logo }</div>
+      <div>
+      <div className='flex flex-row pt-12'>
+        <img src={ siteData.logo } width='400px'/>
         <div className='flex flex-col'>
-      <div className='text-4xl font-bold'>Welcome to { siteData.name }</div>
+      <div className='text-xl font-bold text-blue-900'>Selamat datang di</div>
+      <div className='text-2xl font-bold'>{ siteData.name }</div>
       <div className=''>{ siteData.description }</div>
-          <img src='/assets/icon/telegram-line.svg' />
-          </div>
+                  </div>
     </div>
         </div>
       </>
