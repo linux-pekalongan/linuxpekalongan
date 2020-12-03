@@ -15,8 +15,8 @@ function Navbar(){
   return(
     <>
       <div className={styles.bg}>
-        <div className='fixed z-10 w-full p-4 mt-0 text-white bg-gray-900' >
-          <div className='container flex flex-row justify-between mx-auto menu md:px-20'>
+        <div className='fixed z-10 w-full p-4 mt-0 text-white bg-gray-900 menu' >
+          <div className='container flex flex-row justify-between mx-auto md:px-20'>
             {/* logo untuk mobile */}
             <a className='md:hidden'>
               <img src={ siteData.icon.kalong } width='45px'/>
@@ -39,16 +39,18 @@ function Navbar(){
               <a href={ siteData.community.telegram } ><img src={ siteData.icon.telegram } className='px-4'/></a>
               <a href={ siteData.community.facebook } ><img src={ siteData.icon.facebook }/></a>
             </div>
+            
           </div>
            {/* Dropdown menu mobile */}
-          <div className='block pt-4 text-base' id='myMenu'>
+          <div className='pt-4 text-base' id='myMenu'>
             <div className='flex flex-col'>
               <Link href='/'><a className='p-2 hover:text-green-400'>Home</a></Link>
               <Link  href='/blog'><a  className='p-2 hover:text-green-400'>Artikel</a></Link>
               <Link  href='/about'><a className='p-2 hover:text-green-400'>About</a></Link>
             </div>
           </div>
-        </div>
+
+                  </div>
          {/* Header */}
         <header>
           <div className='flex flex-row min-h-screen pt-12 mx-0 text-white bg-gray-900 md:w-1/2 bg-opacity-30'>
