@@ -8,13 +8,13 @@ function Navbar(){
     <>
       <div className={styles.bg}>
         <div className='fixed z-10 w-full p-5 mt-0 text-white bg-gray-900' >
-          <div className='container flex flex-row justify-between mx-auto lg:px-40'>
-                              <a id='menuButton' className='flex flex-row md:hidden'>
-<img src={ siteData.icon.menu }/>
+          <div className='container flex flex-row justify-between mx-auto lg:px-28'>
+                              <a id='menuButton' className='flex flex-row'>
+<img src={ siteData.icon.kalong } width='30px'/>
             </a>
-            <a className='flex flex-row text-base font-extrabold md:hidden'>Pekalongan1337</a>
+            <a className='flex flex-row text-base font-extrabold text-green-400 md:hidden' style={{ fontSize: '20px' }}>Pekalongan1337</a>
  <a id='menuButton' className='flex flex-row md:hidden'>
-<img src={ siteData.icon.moon }/>
+<img src={ siteData.icon.menu }/>
             </a>
             <div className='hidden font-bold md:flex md:flex-row' id='mobileMenu'>
               <Link href='/'><a className='px-4 hover:text-green-400'>Home</a></Link>
@@ -28,7 +28,7 @@ function Navbar(){
           </div>
         </div>
         <header>
-          <div className='flex flex-row min-h-screen pt-12 mx-0 text-white bg-gray-900 md:w-1/2 bg-opacity-10'>
+          <div className='flex flex-row min-h-screen pt-12 mx-0 text-white bg-gray-900 md:w-1/2 bg-opacity-30'>
             <div className='flex flex-col p-12 md:p-24'>
               <div className='pb-4 text-2xl font-bold text-green-400 md:text-4xl'>{ siteData.name }</div>
               <div className=''>{ siteData.description }</div>

@@ -15,6 +15,7 @@ module.exports = {
     moon : '/assets/icon/moon-line.svg',
     arrow : '/assets/icon/arrow-up-s-line.svg',
     menu : '/assets/icon/menu.svg',
-    checkbox : '/assets/icon/checkbox-circle.svg'
+    checkbox : '/assets/icon/checkbox-circle.svg',
+    kalong : '/assets/icon/kalong.png'
   }
 }
