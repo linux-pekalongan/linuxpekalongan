@@ -12,7 +12,7 @@ function Navbar(){
                               <a id='menuButton' className='flex flex-row md:hidden'>
 <img src={ siteData.icon.menu }/>
             </a>
-            <a className='text-base font-extrabold'>Pekalongan1337</a>
+            <a className='flex flex-row text-base font-extrabold md:hidden'>Pekalongan1337</a>
  <a id='menuButton' className='flex flex-row md:hidden'>
 <img src={ siteData.icon.moon }/>
             </a>
@@ -28,7 +28,7 @@ function Navbar(){
           </div>
         </div>
         <header>
-          <div className='flex flex-row min-h-screen pt-12 mx-0 text-white bg-gray-900 md:w-1/2 bg-opacity-50'>
+          <div className='flex flex-row min-h-screen pt-12 mx-0 text-white bg-gray-900 md:w-1/2 bg-opacity-10'>
             <div className='flex flex-col p-12 md:p-24'>
               <div className='pb-4 text-2xl font-bold text-green-400 md:text-4xl'>{ siteData.name }</div>
               <div className=''>{ siteData.description }</div>

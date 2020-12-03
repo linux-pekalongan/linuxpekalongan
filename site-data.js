@@ -14,6 +14,7 @@ module.exports = {
     github : '/assets/icon/github-line.svg',
     moon : '/assets/icon/moon-line.svg',
     arrow : '/assets/icon/arrow-up-s-line.svg',
-    menu : '/assets/icon/menu.svg'
+    menu : '/assets/icon/menu.svg',
+    checkbox : '/assets/icon/checkbox-circle.svg'
   }
 }
