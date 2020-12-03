@@ -3,8 +3,6 @@
 .font-ubuntu {
 font-family: 'Ubuntu', sans-serif;
 }
-.active {
-  display:block;
-  height: 100%; 
-  width: 100%; 
+.menu #myMenu {
+  display: none;
 }
