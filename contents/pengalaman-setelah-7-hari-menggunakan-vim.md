@@ -4,11 +4,10 @@ image : '/assets/content/{slug}/cover.png'
 slug : 'pengalaman-setelah-7-hari-menggunakan-vim'
 date : '02-12-2020'
 ---
-<p/>
 
 ## Latar belakang
-[[snippet]]
-| Vim merupakan text editor yang berbasiskan terminal.Tidak seperti text editor lain vim menggunakan shortcut untuk mengontrol navigasi.
+
+Vim merupakan text editor yang berbasiskan terminal.Tidak seperti text editor lain vim menggunakan shortcut untuk mengontrol navigasi.
 Bagi yang menggunakan tiling windows manager pasti sudah tidak asing lagi. awal saya tertarik belajar bermula dari grub telegrem 
 DotfilesID, disitu om [BanditHijo](https://bandithijo.com) 
 mengirimkan pesan berupa screnshoot saat ia menggunakan vim, mulai disitu saya sedikit naksir dengan vim dan 

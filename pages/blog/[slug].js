@@ -1,18 +1,19 @@
 import React from 'react'
 import Navbar from '../../components/navbar'
 import Footer from '../../components/footer'
+import tempe from 'tempe'
 
 function postPage(props){
   const cover = '/assets/artikel/' + props.blog.slug + '/cover.png'
   return (
     <>
       <Navbar />
-        <div className='text-white bg'>
+      <div className='text-sm text-white bg md:text-base'>
       <div className='flex flex-col pb-12'>
         <div className='md:px-56'>
           <img src={cover} className='mt-16'/> 
-          <div className='px-4 pt-12 text-3xl font-extrabold'>{props.blog.title}</div>
-          <div className='px-4'>{props.blog.date}</div>
+          <div className='px-4 pt-12 text-3xl font-extrabold title'>{props.blog.title}</div>
+          <div className='px-4 pb-12'>{tempe(props.blog.date).format("d, DD MMMM YYYY")}</div>
           <div className='px-4'><span dangerouslySetInnerHTML={{ __html: props.blog.content }} /></div>
         </div>
       </div>

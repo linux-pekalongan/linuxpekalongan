@@ -3,6 +3,9 @@
 .font-ubuntu {
 font-family: 'Ubuntu', sans-serif;
 }
+code {
+  font-family: monospace;
+}
 .menu #myMenu {
   display: none;
 }
@@ -14,3 +17,20 @@ font-family: 'Ubuntu', sans-serif;
   background-size: cover;
   position: relative;
 }
+
+h1 {
+  font-size: 2rem;
+ }
+h2 {
+  font-size: 1.8rem;
+ }
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+   font-size: 1.3rem;
+}
+h1,h2,h3 {
+    padding-top: 1.5rem;
+   padding-bottom: 1rem;
+  }

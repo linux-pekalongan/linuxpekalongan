@@ -14,11 +14,11 @@ function Blog(props){
           {props.blogs.map((blog, idx,date)=>{
             const cover = '/assets/artikel/' + blog.slug + '/cover.png'
             return (
-              <div className='overflow-hidden rounded-lg shadow-md bg-secondary hover:shadow-xl'>
+              <div className='overflow-hidden bg-gray-900 rounded-lg shadow-md hover:shadow-xl'>
                 <img src={cover}/>
                 <div className='p-4'>
                   <div key={blog.id}>
-                    <div className='text-2xl font-extrabold text-green-400'>
+                    <div className='text-2xl font-extrabold text-green-400 hover:text-white'>
                       <Link href={`/blog/${blog.slug}`}>
                         {blog.title}
                       </Link>
