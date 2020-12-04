@@ -1,8 +1,8 @@
 module.exports = {
-  name : 'Linux Pekalongan',
-  url : 'xxx.com',
+  name : 'Pekalongan1337',
+  baseUrl : '/',
   logo : '/assets/logo.png',
-  description : `Linux Pekalongan adalah adalah komunitas linux yang berada di Pekalongan. Komunitas ini bertujuan sebagai tempat diskusi seputar dunia IT terutama seputar linux dan programing.`,
+  description : `Pekalongan1337 adalah adalah komunitas linux yang berada di Pekalongan. Komunitas ini bertujuan sebagai tempat diskusi seputar dunia IT terutama seputar linux dan programing.`,
   community : {
     facebook : 'https://facebook.com/xxx',
     telegram : 'https://telegram/xxx',

@@ -7,8 +7,9 @@ function postPage(props){
   const cover = '/assets/artikel/' + props.blog.slug + '/cover.png'
   return (
     <>
+      <div className='bg'>
       <Navbar />
-      <div className='text-sm text-white bg md:text-base'>
+      <div className='text-sm text-white md:text-base'>
       <div className='flex flex-col pb-12'>
         <div className='md:px-56'>
           <img src={cover} className='mt-16'/> 
@@ -19,6 +20,7 @@ function postPage(props){
       </div>
           </div>
       <Footer/>
+        </div>
     </>
   )
 }
