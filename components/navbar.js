@@ -18,7 +18,7 @@ function Navbar(){
         <div className='container flex flex-row justify-between mx-auto md:px-32'>
           {/* logo untuk mobile */}
           <a className='flex flex-row md:hidden'>
-            <img src={ siteData.icon.kalong } width='60px'/> <b className='text-xl font-extrabold'>Pekalongan<span className='text-green-400'>1337</span></b>
+            <img src={ siteData.icon.kalong } width='60px'/>
           </a>
 
           {/* Menu untuk desktop */}
@@ -29,7 +29,7 @@ function Navbar(){
             </Link>
           </div>
           {/* mobile center */}
-          <a className='flex flex-row text-base font-extrabold md:hidden' style={{ fontSize: '20px' }}></a>
+          <Link href='/'><a className='flex flex-row text-base font-extrabold md:hidden' style={{ fontSize: '20px' }}> <b className='text-lg font-bold'>Pekalongan<span className='text-green-400'>1337</span></b></a></Link>
           {/* toggle */}
           <a onClick={mobileMenu} className='flex flex-row md:hidden'>
             <img src={ siteData.icon.menu }/>
@@ -44,7 +44,7 @@ function Navbar(){
         </div>
         {/* Dropdown menu mobile */}
         <div className='pt-4 text-base' id='myMenu'>
-          <div className='flex flex-col'>
+          <div className='flex flex-col text-center'>
             <Link href='/'><a className='p-2 hover:text-green-400'>Home</a></Link>
             <Link  href='/blog'><a  className='p-2 hover:text-green-400'>Artikel</a></Link>
             <Link  href='/about'><a className='p-2 hover:text-green-400'>About</a></Link>

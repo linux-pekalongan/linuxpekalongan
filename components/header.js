@@ -13,10 +13,10 @@ function Header(){
             <div className='mt-12 text-xl font-extrabold'>Sini join :</div>
             <div className='flex flex-row'>
               <div className='flex flex-row p-3 m-4 bg-purple-500 rounded-lg'>
-              <img src={ siteData.icon.telegram }/> <a href={ siteData.community.telegram } className='pl-1'>  Telegram</a>
+                <a href={ siteData.community.telegram } ><img src={ siteData.icon.telegram } /></a>
 </div>
               <div className='flex flex-row p-3 m-4 bg-blue-500 rounded-lg'>
-              <img src={ siteData.icon.facebook }/> <a href={ siteData.community.facebook } className='pl-3' > Facebook</a>
+             <a href={ siteData.community.facebook } className='' > <img src={ siteData.icon.facebook }/> </a>
                 </div>
             </div>
           </div>
