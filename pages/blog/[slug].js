@@ -4,7 +4,6 @@ import Footer from '../../components/footer'
 import tempe from 'tempe'
 import siteData from '../../site-data'
 
-
 function postPage(props){
   const cover = '/assets/artikel/' + props.blog.slug + '/cover.png'
   return (
@@ -29,8 +28,6 @@ function postPage(props){
     </>
   )
 }
-
-
 
 export async function getStaticProps(context){
   const fs = require('fs');

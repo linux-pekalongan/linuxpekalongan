@@ -18,7 +18,7 @@ function Navbar(){
         <div className='container flex flex-row justify-between mx-auto md:px-32'>
           {/* logo untuk mobile */}
           <a className='flex flex-row md:hidden'>
-            <img src={ siteData.icon.kalong } width='60px'/>
+            <img src={ siteData.icon.kalong } width='40px'/>
           </a>
 
           {/* Menu untuk desktop */}
