@@ -4,16 +4,15 @@ import styles from '../styles/header.module.css'
 function Header(){
   return (
     <>
-      <div>
-      <div className='flex flex-row pt-12'>
-        <img src={ siteData.logo } width='400px'/>
-        <div className='flex flex-col'>
-      <div className='text-xl font-bold text-blue-900'>Selamat datang di</div>
-      <div className='text-2xl font-bold'>{ siteData.name }</div>
-      <div className=''>{ siteData.description }</div>
-                  </div>
-    </div>
-        </div>
+      {/* Header */}
+        <header>
+          <div className='flex flex-row h-screen pt-12 mx-0 text-white md:pt-4 md:w-1/2'>
+            <div className='flex flex-col p-12 md:p-28'>
+              <div className='pb-4 text-3xl font-bold text-green-400 md:text-4xl'>{ siteData.name }</div>
+              <div className=''>{ siteData.description }</div>
+            </div>
+          </div>
+        </header>
       </>
   )
 }

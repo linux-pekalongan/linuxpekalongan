@@ -6,3 +6,11 @@ font-family: 'Ubuntu', sans-serif;
 .menu #myMenu {
   display: none;
 }
+.bg {
+  background-image: url('/assets/batik.jpg');
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}

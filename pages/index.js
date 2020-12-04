@@ -20,9 +20,11 @@ function IndexPage(){
     <meta name="application-name" content="Pekalongan1337" />
                 <title>{ siteData.name }</title>
         </Head>
+       <div className='bg'>
             <Navbar />
+         <Header />
              <Footer />
-
+</div>
          
     </>
   )

@@ -14,9 +14,8 @@ function mobileMenu(){
 function Navbar(){
   return(
     <>
-      <div className={styles.bg}>
-        <div className='fixed z-10 w-full p-4 mt-0 text-white bg-gray-900 menu' >
-          <div className='container flex flex-row justify-between mx-auto md:px-20'>
+             <div className='fixed z-10 w-full p-5 mt-0 text-white bg-gray-900 menu' >
+          <div className='container flex flex-row justify-between mx-auto md:px-32'>
             {/* logo untuk mobile */}
             <a className='md:hidden'>
               <img src={ siteData.icon.kalong } width='45px'/>
@@ -47,21 +46,16 @@ function Navbar(){
               <Link href='/'><a className='p-2 hover:text-green-400'>Home</a></Link>
               <Link  href='/blog'><a  className='p-2 hover:text-green-400'>Artikel</a></Link>
               <Link  href='/about'><a className='p-2 hover:text-green-400'>About</a></Link>
+              <span className='p-2'>Join :</span>
+              <div className='flex flex-row mt-4'> 
+                             <a href={ siteData.community.telegram } className='mx-6'><img src={ siteData.icon.telegram } /></a>
+              <a href={ siteData.community.facebook } ><img src={ siteData.icon.facebook }/></a>
+                </div>
             </div>
           </div>
 
                   </div>
-         {/* Header */}
-        <header>
-          <div className='flex flex-row min-h-screen pt-12 mx-0 text-white bg-gray-900 md:w-1/2 bg-opacity-30'>
-            <div className='flex flex-col p-12 md:p-24'>
-              <div className='pb-4 text-3xl font-bold text-green-400 md:text-4xl'>{ siteData.name }</div>
-              <div className=''>{ siteData.description }</div>
-            </div>
-          </div>
-        </header>
-      </div>
-    </>
+                </>
   )
 }
 
