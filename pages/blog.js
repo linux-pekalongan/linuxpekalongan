@@ -3,6 +3,7 @@ import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import Link from 'next/link'
 import tempe from 'tempe'
+import siteData from '../site-data'
 
 function Blog(props){
   return(
@@ -18,12 +19,17 @@ function Blog(props){
                 <img src={cover}/>
                 <div className='p-4'>
                   <div key={blog.id}>
-                    <div className='text-2xl font-extrabold text-green-400 hover:text-white'>
+                    <div className='text-2xl font-extrabold hover:text-green-400'>
                       <Link href={`/blog/${blog.slug}`}>
                         {blog.title}
                       </Link>
                     </div>
-                    {tempe(blog.date).format("d, DD MMMM YYYY")}                  </div>
+                    <div className='flex flex-row pb-2 mb-2' style={{ borderBottom : 'solid 1px #222937' }}>
+                   <img src={siteData.icon.calendar} width='15px' /> 
+                     <span className='pl-2 text-xs text-gray-400'>{tempe(blog.date).format("d, DD MMMM YYYY")}  </span>  
+                      </div>
+                    <span className='p-1 mr-1 text-xs uppercase bg-gray-800 text-bold'>{blog.tags}</span>
+                  </div>
                 </div>
               </div>
             );

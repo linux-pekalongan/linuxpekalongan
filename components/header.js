@@ -16,7 +16,10 @@ function Header(){
                 <a href={ siteData.community.telegram } ><img src={ siteData.icon.telegram } /></a>
 </div>
               <div className='flex flex-row p-3 m-4 bg-blue-500 rounded-lg'>
-             <a href={ siteData.community.facebook } className='' > <img src={ siteData.icon.facebook }/> </a>
+             <a href={ siteData.community.facebook } > <img src={ siteData.icon.facebook }/> </a>
+                </div>
+               <div className='flex flex-row p-3 m-4 bg-yellow-500 rounded-lg'>
+             <a href={ siteData.community.github } > <img src={ siteData.icon.github }/> </a>
                 </div>
             </div>
           </div>
