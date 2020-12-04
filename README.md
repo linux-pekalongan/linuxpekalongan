@@ -3,7 +3,7 @@
 clone and install dependency
 
 ```
-git clone https://github.com/linux-pekalongan/linuxpekalongan
+git clone https://github.com/pekalongan1337/pekalongan1337.vercel.app
 cd linuxpekalongan
 yarn add
 ```
