@@ -12,9 +12,9 @@ function Blog(props){
       <div className='bg'>
         <div className='container flex flex-row p-4 mx-auto text-white md:px-40 md:p-28'>
           <div className="mt-16 md:mt-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
-          {props.blogs.map((blog, idx,date)=>{
+          {props.blogs.map((blog, idx)=>{
             const cover = '/assets/artikel/' + blog.slug + '/cover.png'
-            return (
+                      return (
               <div className='overflow-hidden bg-gray-900 rounded-lg shadow-md hover:shadow-xl'>
                 <img src={cover}/>
                 <div className='p-4'>
