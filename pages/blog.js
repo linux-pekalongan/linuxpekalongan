@@ -9,12 +9,13 @@ function Blog(props){
     <>
       <Navbar />
       <div className='bg'>
-        <div className='container flex flex-row px-40 mx-auto text-white p-28'>
+        <div className='container flex flex-row p-4 mx-auto text-white md:px-40 md:p-28'>
+          <div className="mt-16 md:mt-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
           {props.blogs.map((blog, idx,date)=>{
             const cover = '/assets/artikel/' + blog.slug + '/cover.png'
             return (
-              <div className='m-4 overflow-hidden bg-gray-800 rounded-md'>
-                <img src={cover} width='400px'/>
+              <div className='overflow-hidden rounded-lg shadow-md bg-secondary hover:shadow-xl'>
+                <img src={cover}/>
                 <div className='p-4'>
                   <div key={blog.id}>
                     <div className='text-2xl font-extrabold text-green-400'>
@@ -28,6 +29,7 @@ function Blog(props){
             );
           })}
         </div>
+          </div>
         <Footer />
       </div>
     </>
