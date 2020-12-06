@@ -14,7 +14,7 @@ function Blog(props){
           <div className="mt-16 md:mt-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
           {props.blogs.map((blog, idx)=>{
             const cover = '/assets/artikel/' + blog.slug + '/cover.png'
-                      return (
+              return (
               <div className='overflow-hidden bg-gray-900 rounded-lg shadow-md hover:shadow-xl'>
                 <img src={cover}/>
                 <div className='p-4'>
