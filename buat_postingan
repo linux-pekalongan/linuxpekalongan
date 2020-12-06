@@ -1,7 +1,9 @@
 #!/bin/bash
 
 echo "untuk spapsi menggunakan tanda -"
-echo "Masukan slug postingan :" read slug
+echo "Masukan slug postingan :" 
+
+read slug
 
 
 touch contents/$slug.md
