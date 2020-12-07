@@ -1,7 +1,7 @@
 ---
-title : 'hello world1'
+title : 'hello world2'
 slug : 'hello-world'
-date : '2020-12-2'
+date : '2020-12-4'
 tags : 
     - linux
 ---
