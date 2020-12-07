@@ -35,7 +35,7 @@ function postPage(props){
                 <span className='pl-2 text-xs text-gray-400'>{tempe(props.blog.date).format("d, DD MMMM YYYY")}</span>
               </div>
               <div className='px-4'><span dangerouslySetInnerHTML={{ __html: props.blog.content }} /></div>
-              <div>
+              <div className='px-4 pt-8'>
                 <DiscussionEmbed
                   shortname={disqusShortname}
                   config={disqusConfig}
