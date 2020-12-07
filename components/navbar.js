@@ -43,11 +43,11 @@ function Navbar(){
 
         </div>
         {/* Dropdown menu mobile */}
-        <div className='pt-4 text-base' id='myMenu'>
-          <div className='flex flex-col text-center'>
-            <Link href='/'><a className='p-2 hover:text-green-400'>Home</a></Link>
-            <Link  href='/blog'><a  className='p-2 hover:text-green-400'>Artikel</a></Link>
-            <Link  href='/about'><a className='p-2 hover:text-green-400'>About</a></Link>
+        <div className='' id='myMenu'>
+          <div className='flex flex-col items-center justify-center inline-block w-full h-screen'>
+            <Link href='/'><a className='p-4 hover:text-green-400'>Home</a></Link>
+            <Link  href='/blog'><a  className='p-4 hover:text-green-400'>Artikel</a></Link>
+            <Link  href='/about'><a className='p-4 hover:text-green-400'>About</a></Link>
             {/* <span className='p-2'>Join :</span> */}
             {/* <div className='flex flex-row mt-4'> */}
             {/*   <a href={ siteData.community.telegram } className='mx-6'><img src={ siteData.icon.telegram } /></a> */}
